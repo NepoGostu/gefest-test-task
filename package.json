@@ -1,7 +1,9 @@
 {
   "scripts": {
     "build": "webpack  --mode=production",
-    "start": "webpack serve --open  --mode development"
+    "start": "webpack serve --open  --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -30,5 +32,5 @@
     "react-router-dom": "^6.9.0",
     "swiper": "^6.8.4"
   },
-  "homepage": "/test-fe/"
+  "homepage": "https://NepoGostu.github.io/gefest-test-task"
 }
