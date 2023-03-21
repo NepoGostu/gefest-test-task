@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 
-const Laoyut = React.memo(({ children, noFooter, empty }) => {
+const Layout = React.memo(({ children, noFooter, empty }) => {
   return (
     <div className="wrapper">
       <Header />
@@ -12,4 +12,4 @@ const Laoyut = React.memo(({ children, noFooter, empty }) => {
   )
 })
 
-export default Laoyut
+export default Layout

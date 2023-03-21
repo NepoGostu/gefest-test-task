@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Laoyut from '../../components/Layout/Layout'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper'
+import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
+import Layout from '../../components/Layout/Layout'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import SwiperCore, {Controller, Navigation, Pagination, Thumbs} from 'swiper'
 import 'swiper/swiper-bundle.css'
 import './Home.css'
 
@@ -30,7 +30,7 @@ const Home = React.memo(props => {
   }
 
   return (
-    <Laoyut>
+    <Layout>
       <div className="home">
         <div className="container">
           <div className="home__inner">
@@ -72,7 +72,7 @@ const Home = React.memo(props => {
           </div>
         </div>
       </div>
-    </Laoyut>
+    </Layout>
   )
 })
 

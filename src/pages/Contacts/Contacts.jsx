@@ -1,14 +1,14 @@
 import React from 'react'
-import Laoyut from '../../components/Layout/Layout'
+import Layout from '../../components/Layout/Layout'
 
-const Сontacts = React.memo(props => {
+const Contacts = React.memo(props => {
   return (
-    <Laoyut empty={true}>
+    <Layout empty={true}>
       <>
         <div className="contacts">Страница контактов ещё не оформлена</div>
       </>
-    </Laoyut>
+    </Layout>
   )
 })
 
-export default Сontacts
+export default Contacts

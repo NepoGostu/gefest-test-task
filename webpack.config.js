@@ -27,13 +27,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
       {
-        test: /\.(scss|css)$/,
-        exclude: /\.module.(s(a|c)ss)$/,
+        test: /\.(css)$/,
+        exclude: /\.module.(css)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -52,7 +52,6 @@ module.exports = {
               },
             },
           },
-          'sass-loader',
         ],
       },
       {
@@ -66,17 +65,6 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(ttf|woff|woff2|eot|gif|)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'assets/[ext]/[name].[ext]',
-            },
-          },
-        ],
-      }
     ],
   },
   plugins: [
