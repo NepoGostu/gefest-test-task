@@ -1,7 +1,6 @@
 ﻿# Gefest test task
  
- 
- <img src="https://github.com/NepoGostu/gefest-test-task\src\assets\images\test-gefest.gif" >
+ ![test-gefest](https://user-images.githubusercontent.com/78683073/226630556-6cf935f5-c72f-4802-98cf-4970e8ca520a.gif)
  
  библиотека для реализации слайдера swiper: https://www.npmjs.com/package/swiper  
  cборка на React: https://react.dev/  
